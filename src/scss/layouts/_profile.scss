@@ -1,0 +1,137 @@
+.hero {
+  padding-top: 32px;
+  padding-bottom: 42px;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+
+  @include mobile {
+    width: $mobile;
+    padding-bottom: 40px;
+    padding-top: 49px;
+  }
+
+  @include tablet {
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 49px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 24px;
+    }
+    @include desktop {
+      gap: 59px;
+    }
+  }
+
+  &__overlay {
+    display: flex;
+    padding: 0;
+    min-width: 96px;
+    width: 96px;
+    height: 96px;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../img/avatarka.jpg');
+    background-image: url('../img/avatarka.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+
+    @include retina {
+      background-image: url('../img/avatarka-2x.jpg');
+      background-image: url('../img/avatarka-2x.webp');
+    }
+    // @include tablet {
+    //   flex-direction: column-reverse;
+    //   align-items: flex-start;
+    // }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+
+    @include tablet {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.29;
+    color: var(--text);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 12px;
+
+    @include tablet {
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    @include desktop {
+      font-size: 32px;
+      line-height: 1.12;
+    }
+  }
+
+  &__info-box {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    height: 20px;
+    margin-bottom: 28px;
+    @include tablet {
+      margin-bottom: 12px;
+    }
+  }
+  &__info-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--blue);
+  }
+  &__info-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+
+    &--list {
+      stroke: currentColor;
+    }
+  }
+  &__info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--text-light);
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--text);
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+  }
+}

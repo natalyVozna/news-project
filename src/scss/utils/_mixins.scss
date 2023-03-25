@@ -1,0 +1,37 @@
+@mixin mobile {
+  @media screen and (min-width: 360px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1220px) {
+    @content;
+  }
+}
+
+@mixin media-min($query) {
+  @media screen  and (min-width: #{$query}) {
+    @content;
+  }
+}
+
+@mixin media-max($query) {
+  @media screen  and (max-width: #{$query}) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}

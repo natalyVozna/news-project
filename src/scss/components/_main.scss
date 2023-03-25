@@ -1,0 +1,34 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+  box-sizing: border-box;
+
+  @include tablet {
+    flex-direction: row;
+    padding: 0 30px;
+    width: $tablet;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    width: $desktop;
+  }
+  // @include desktop {
+  //   padding: 0 40px;
+  // }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+
+    // @include tablet {
+    //   width: calc(100% - 288px);
+    // }
+    // @include desktop {
+    //   width: calc(100% - 328px);
+    // }
+  }
+}

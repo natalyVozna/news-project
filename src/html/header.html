@@ -1,0 +1,90 @@
+<header class="header">
+  <div class="header__fixed">
+    <div class="container header__container">
+      <div class="header__wrap">
+        <button
+          type="button"
+          class="mobile-menu__btn mobile-menu__btn--open"
+          data-modal-open
+        >
+          <svg class="mobile-menu__icon">
+            <use
+              class="mobile-menu__icon-menu"
+              href="@img/sprite.svg#icon-menu-open"
+            ></use>
+          </svg>
+        </button>
+
+        <a class="logo" href="./index.html">
+          <img src="@img/logo.svg" alt="main-logo" />
+        </a>
+
+        <div class="header__main-menu">
+          <nav class="header__nav">
+            <ul class="navigation list">
+              <li class="navigation__item">
+                <a
+                  class="navigation__link navigation__link--current"
+                  href="./"
+                  data-link-news
+                  >новини</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./" data-link-sport>спорт</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./" data-link-finance
+                  >фінанси</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="language">
+        <a href="#" class="language__btn active" lang="ua" data-switcher-ua>
+          UA
+        </a>
+        <a thref="#" class="language__btn" lang="ru" data-switcher-ru> Ru </a>
+      </div>
+
+      <!-------- Mobile-menu -------->
+
+      <div class="mobile-menu hide" data-modal>
+        <div class="mobile-menu__container">
+          <button
+            type="button"
+            class="mobile-menu__btn mobile-menu__btn--close"
+            data-modal-close
+          >
+            <svg class="mobile-menu__icon">
+              <use
+                class="mobile-menu__icon-cross"
+                href="@img/sprite.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list" data-menu-list>
+              <li class="mobile-menu__item">
+                <a
+                  class="mobile-menu__link navigation__link--current"
+                  href="./index.html"
+                  >новини</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./portfolio.html">спорт</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/">фінанси</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

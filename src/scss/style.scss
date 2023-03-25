@@ -1,0 +1,24 @@
+// @import 'fonts';
+// Utils styles
+@import './utils/brackpoints';
+@import './utils/colormap';
+@import './utils/mixins';
+@import './utils/utils';
+
+// Base styles
+// @import './base/common';
+@import './base/reset';
+@import './base/global';
+
+//Layout
+@import './layouts/header';
+@import './layouts/advertising';
+@import './layouts/news';
+@import './layouts/profile';
+
+// components styles
+@import './components/container';
+@import './components/main';
+@import './components/logo';
+@import './components/menu-mobile';
+@import './components/navigation';

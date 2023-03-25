@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  // max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 12px;
+
+  @include media-min($mobile) {
+    width: $mobile;
+  }
+  @include media-min($tablet) {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: $tablet;
+  }
+  @include media-min($desktop) {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: $desktop;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}

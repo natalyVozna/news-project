@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  min-width: 320px;
+
+  @include media-min($mobile) {
+    width: $mobile;
+  }
+  @include media-min($tablet) {
+    width: $tablet;
+    padding: 0 30px;
+  }
+  @include media-min($desktop) {
+    width: $desktop;
+  }
+}
