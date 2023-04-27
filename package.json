@@ -3,19 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://natalyvozna.github.io/news-project",
   "type": "module",
   "scripts": {
     "dev": "gulp",
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
-    "deploy": "gulp deployFTP --build",
-    "svgSprive": "gulp svgSprive"
+    "deploy-ftp": "gulp deployFTP --build",
+    "svgSprive": "gulp svgSprive",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "nataly",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "latest",
     "del": "latest",
+    "gh-pages": "^5.0.0",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-clean-css": "latest",

@@ -1,8 +1,9 @@
 //Отримуємо імя папки проекта
-import * as nodePath from "path";
+import * as nodePath from 'path';
 const rootFolder = nodePath.basename(nodePath.resolve());
 
-const buildFolder = `./dist`; //також можна використовувати rootFolder
+// const buildFolder = `./dist`; //також можна використовувати rootFolder
+const buildFolder = `./build`; //також можна використовувати rootFolder
 const srcFolder = `./src`;
 
 export const path = {
